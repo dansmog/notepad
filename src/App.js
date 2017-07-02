@@ -9,8 +9,8 @@ class App extends Component {
              <div className="main-header__block">
                 <h1>Notepad</h1>
                 <nav>
-                  <a href=""><i className="icons icon-plus"></i>New note</a>
-                  <a href=""><i className="icons icon-login"></i>Login</a>
+                  <a href="#"><i className="icons icon-plus"></i>New note</a>
+                  <a href="#"><i className="icons icon-login"></i>Login</a>
                 </nav>
              </div>
               
@@ -69,20 +69,25 @@ class App extends Component {
           </section>
 
           <aside className="sidebar">
-              <form>
-                <h3>Add New Note</h3>
-                <i className="close">close</i>
-                <div className="form-group">
-                  <label htmlFor="note-title">Title:</label>
-                  <input type="text" name="note-title" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="note-text">Text:</label>
-                  <textarea name="note-text"></textarea>
-                </div>
+            <div className="form--contain">
+                <form>
+                  <div className="form--header">
+                    <h3>Add New Note</h3>
+                    <i className="icons icon-close"></i>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="note-title"></label>
+                    <input type="text" name="note-title" placeholder="title"/>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="note-text"></label>
+                    <textarea name="note-text" placeholder="note"></textarea>
+                  </div>
 
-                <button>Add New Note</button>
-              </form>
+                  <button>Add New Note</button>
+                </form>
+            </div>
+              
           </aside>
 
       </section>
