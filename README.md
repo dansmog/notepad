@@ -6,7 +6,7 @@ basic authentication with firebase and firebase realtime database for storing th
 
 
 <p align="center">
-<img align="center" src="screen.gif"  alt="whatsapp web clone in reactjs"/>
+<img align="center" src="screen.gif"  alt="notepad"/>
 </p>
 
 
