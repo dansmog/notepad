@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+  }
+
+  showSidebar = (e) => {
+    e.preventDefault();
+    console.log(this);
+    this.sidebar.classList.add("show");
+  }
+
+  hideSideBar = (e) => {
+    e.preventDefault();
+    this.sidebar.classList.remove("show");
+  }
   render(){
     return(
       <section className="wrapper">
@@ -9,8 +23,8 @@ class App extends Component {
              <div className="main-header__block">
                 <h1>Notepad</h1>
                 <nav>
-                  <a href="#"><i className="icons icon-plus"></i>New note</a>
-                  <a href="#"><i className="icons icon-login"></i>Login</a>
+                  <a href="#hk"  onClick={ this.showSidebar }><i className="icons icon-plus"></i>New note</a>
+                  <a href="#g"><i className="icons icon-login"></i>Login</a>
                 </nav>
              </div>
               
@@ -67,13 +81,12 @@ class App extends Component {
             </div>
             
           </section>
-
-          <aside className="sidebar">
+          <aside className="sidebar" ref={ref => this.sidebar = ref}>
             <div className="form--contain">
                 <form>
                   <div className="form--header">
                     <h3>Add New Note</h3>
-                    <i className="icons icon-close"></i>
+                    <i className="icons icon-close" onClick={ this.hideSideBar }></i>
                   </div>
                   <div className="form-group">
                     <label htmlFor="note-title"></label>
@@ -89,6 +102,8 @@ class App extends Component {
             </div>
               
           </aside>
+
+          
 
       </section>
     )

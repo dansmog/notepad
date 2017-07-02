@@ -5,6 +5,9 @@ This is a basic note taking app, you can perform the basic `CRUD` with
 basic authentication with firebase and firebase realtime database for storing the notes.
 
 
+https://imgflip.com/gif/1rvvtx
+
+
 #### To make use of this project
 
 you can either `git clone` or `download` this project, then `cd` into the project folder

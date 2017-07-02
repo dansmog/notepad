@@ -97,6 +97,11 @@ h6 {
     top: 50px;
     left: -400px;
     height: 100vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.show {
+    left: 0;
 }
 
 .sidebar form {
@@ -136,21 +141,18 @@ textarea {
     margin-top: 20px;
 }
 
-.form-group label {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .form-group input,
 .form-group textarea {
     margin-top: 10px;
     padding: 7px 15px;
     border: 2px solid #f3f3f3;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .form-group textarea {
     height: 150px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 button {
