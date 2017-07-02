@@ -5,7 +5,7 @@ This is a basic note taking app, you can perform the basic `CRUD` with
 basic authentication with firebase and firebase realtime database for storing the notes.
 
 
-<a href="https://imgflip.com/gif/1rvvtx"><img src="https://i.imgflip.com/1rvvtx.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/1rvvtx"><img src="https://i.imgflip.com/1rvvtx.gif" title="made at imgflip.com" align="center" width="100%"/></a>
 
 
 #### To make use of this project
