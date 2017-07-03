@@ -39,6 +39,8 @@ class App extends Component {
     //clear form after adding
     this.refs.title.value = '';
     this.refs.note.value = '';
+
+    this.showSidebar(e);
   }
   render(){
 
